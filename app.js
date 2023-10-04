@@ -28,7 +28,8 @@ io.on("connection", (socket) => {
     //Welcome user
     socket.emit("message", formatMessage(chatBot, "welcome to chat"));
 
-    //broadcast when user connects
+    //broadcast when user connects 
+    //adddeddede
     socket.broadcast
       .to(user.room)
       .emit(
